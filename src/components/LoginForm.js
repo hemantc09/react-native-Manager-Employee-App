@@ -77,6 +77,7 @@ class LoginForm extends Component {
            <CardSection style={{ padding: 0, borderWidth: 0 }}>
             {this.renderButton()}
           </CardSection>
+          <Text style={{alignSelf:'center'}}> Easy sign up with new email and password </Text>
         </Card>
       </View>
     );

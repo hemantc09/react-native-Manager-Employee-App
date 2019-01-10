@@ -3,7 +3,8 @@ import {
   PASSWORD_CHANGED,
   LOGIN_USER_SUCCESS,
   LOGIN_USER_FAIL,
-  LOGIN_USER
+  LOGIN_USER,
+  LOG_OUT_USER
  } from '../actions/types';
 
 //always have something to return from reducer. Never return null
@@ -39,6 +40,11 @@ export default (state = INITIAL_STATE, action) => {
       };
     case LOGIN_USER_FAIL:
       return { ...state, error: 'Authentication Failed', loading: false, password: '' };
+
+    case LOG_OUT_USER:
+      return {
+        ...state
+      };
     default:
       return state;
   }

@@ -57,9 +57,8 @@ class EmployeeEdit extends Component {
 
         <CardSection
         style={cardSectionStyle}
-        onPress={this.onTextPress.bind(this)}
         >
-          <Button>
+          <Button onPress={this.onTextPress.bind(this)}>
             Text Schedule
           </Button>
         </CardSection>
