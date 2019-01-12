@@ -39,13 +39,13 @@ class EmployeeList extends Component {
   }
 
   renderRow(employee) {
+    console.log('employee', employee);
       return <ListItem style={styles.listItemStyle} employee={employee} />;
   }
 
 
   render() {
     const { listViewStyles } = styles;
-    // console.log(this.props);
     return (
       <View>
         <ListView
